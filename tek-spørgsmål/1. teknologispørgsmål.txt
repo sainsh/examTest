@@ -1,0 +1,11 @@
+for at sikre cpr-numre, kunne man hashe nummeret
+ inden det bliver skrevet til databasen. 
+Og så ved "login" kunne man bruge samme hash funktion til at 
+sammenligne
+derudover kunne man bruge prepared statements så det kun er developeren
+som bestemmer hvordan man tilgår databasen, fx ved en CRUD(create, read, update, delete).
+derudover kan man, hvis brugeres skal kunne udfylde data selv, sørger for at alle
+specialtegn "escapes" altså at teksten bliver læst igennem og hvert special tegn erstates
+med unicode istedet for at lade det stå direkte i teksten
+
+Man kunne også bruge en ORM(object relational mapping), til at tilgå databasen
