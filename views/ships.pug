@@ -1,11 +1,12 @@
 extends layout
 
 block content
-  h1= title
+  
   div(class="container")
   div(class="row")
     div(class="col-2")
-    div(class="col-8")
+    div(class="col-8 txt-center")
+        h1= title
         if uname
             h2 welcome #{uname}
         else
@@ -23,8 +24,8 @@ block content
         br
     div(class="row")
         div(class="col-2")
-        div(class="col-8")
-            table(class="table-dark")
+        div(class="col-8 txt-center")
+            table(class="table")
                 tr
                     thead
                         th Navn
